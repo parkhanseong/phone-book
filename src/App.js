@@ -33,6 +33,7 @@ class App extends Component {
         onCreate_={this.handleCreate}
         />
         <PhoneInfoList data={this.state.information}/>
+        <PhoneInfo/>
       </div>
     );
   }
