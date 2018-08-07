@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <div>
         <PhoneForm
-          onCreate={this.handleCreate}
+        onCreate_={this.handleCreate}
         />
         <PhoneInfoList data={this.state.information}/>
       </div>
