@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 
 class PhoneForm extends Component {
   state = {
-    name: '',
-    phone: ''
+    name: 'state name 0',
+    phone: 'state phone 0',
   }
   handleChange = (e) => {
     this.setState({
@@ -15,14 +15,14 @@ class PhoneForm extends Component {
     // 페이지 리로딩 방지
     e.preventDefault();
     // 상태값을 onCreate 를 통하여 부모에게 전달
-    console.log("this.sate : " + this.state);
     this.props.onCreate_(this.state);
 
     // 상태 초기화
     this.setState({
-      name: '',
-      phone: ''
+      name: 'name reset',
+      phone: 'phone reset'
     })
+
   }
   render() {
     return (
