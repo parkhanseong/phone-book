@@ -16,7 +16,8 @@ class PhoneForm extends Component {
     e.preventDefault();
     // 상태값을 onCreate 를 통하여 부모에게 전달
     console.log("this.sate : " + this.state);
-    this.props.onCreate(this.state);
+    this.props.onCreate_(this.state);
+
     // 상태 초기화
     this.setState({
       name: '',
